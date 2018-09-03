@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./game.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.dev.js" defer></script>
+	<!-- <script type="text/javascript" src="./socket.js" defer></script> -->
+	<script type="text/javascript" src="./game.js" defer></script>
+	<script type="text/javascript" src="./main.js" defer></script>
+	<title>3d Tic Tac Toe</title>
+</head>
+<body>
+	<h3>3d Tic Tac Toe</h3>
+	<h3 id="roomStatus">Connecting to server...</h3>
+	<h3 id="turnIndicator">Waiting for the game to start</h3>
+	<h3 id="victoryStatus">No one has won yet</h3>
+	<h3 id="currentGameStats">You have made 0 moves</h3>	
+	<table id="layer1" align="center">
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>		
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>
+	</table>
+	<table id="layer2" align="center">
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>		
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>
+	</table>
+	<table id="layer3" align="center">
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>
+		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+
+		</tr>		<tr>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+			<td class="tile">1</td>
+		</tr>
+	</table>
+	<!-- move this button to js to pass player side to playerReady -->
+	<button onclick='playerReady()'>Ready</button>
+
+	<br>
+	<div id="chat">
+		<div id="chatWindow"></div>
+		<input type="text" id="message"/>
+		<button id="sendMessage">Send message</button>
+	</div>
+
+</body>
+</html>

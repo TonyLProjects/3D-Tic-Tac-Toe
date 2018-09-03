@@ -1,0 +1,16 @@
+	<style type="text/css">
+		table{
+			table-layout: fixed;
+			border: 1px solid black;
+			border-collapse: collapse;
+		}	
+		td{
+			height: 35px;
+			width: 35px;
+			border: 1px solid black;
+		}
+		.tile:hover{
+			background-color: lightgrey !important;
+		}
+
+	</style>
